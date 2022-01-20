@@ -1,0 +1,83 @@
+/*
+ * wcj-opc-style.
+ *
+ * @version 1.0.0
+ */
+
+.wcj_wishlist_page {
+  width: 100%;
+  float: left;
+}
+.wcj_wishlist_page .wcj_wishlist_page_notice {
+  width: 100%;
+  float: left;
+}
+.wcj_wishlist_btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.wcj_wishlist_btn_single {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+.wcj_wishlist_table .wcj_wt_remove_product {
+  width: 50px;
+}
+.wcj_wishlist_table .wcj_wt_product_img {
+  width: 100px;
+}
+.wcj_wishlist_general_loader {
+  position: relative;
+}
+.wcj_wishlist_general_loader.loading {
+  opacity: 0.5;
+}
+.wcj_wishlist_general_loader.loading span::after {
+  content: url("../../assets/images/ajax_spinner.gif");
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  display: block;
+}
+.wcj_ajax_remove_from_wishlist {
+  /* display: block; */
+  width: 1.618em;
+  height: 1.618em;
+  line-height: 1.618;
+  font-weight: 400;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: relative;
+}
+.wcj_ajax_remove_from_wishlist::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  line-height: inherit;
+  vertical-align: baseline;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #737781;
+  line-height: 1.618;
+  text-indent: 0;
+  text-align: center;
+}
+.wcj_ajax_remove_from_wishlist.loading span::after {
+  text-indent: 0;
+}
