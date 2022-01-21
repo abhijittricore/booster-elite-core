@@ -327,7 +327,7 @@ class WCJ_Max_products_Per_User extends WCJ_Module {
 						'%max_qty%'             => $max_qty,
 						'%product_title%'       => $product->get_title(),
 						'%qty_already_bought%'  => $user_already_bought,
-						'%remaining_qty%'       => max( ( $max_qty - $user_already_bought ), 0 ),
+						'%remaining_qty%'       => max( ( (int)$max_qty - (int)$user_already_bought ), 0 ),
 					);
 					$message = wcj_get_option( 'wcj_max_products_per_user_message',
 						__( 'You can only buy maximum %max_qty% pcs. of %product_title% (you already bought %qty_already_bought% pcs.).', 'woocommerce-jetpack' ) );
